@@ -1,0 +1,42 @@
+{
+  "name": "Customer_Other_Rewards",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "activated": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "reward": {
+      "type": "string",
+      "required": true
+    },
+    "used": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "used_ts": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "business": {
+      "type": "belongsTo",
+      "model": "Business",
+      "foreignKey": ""
+    },
+    "customer": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

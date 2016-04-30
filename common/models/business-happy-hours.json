@@ -1,0 +1,25 @@
+{
+  "name": "Business_Happy_Hours",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "from_time": {
+      "type": "date"
+    },
+    "to_time": {
+      "type": "date"
+    },
+    "days": {
+      "type": [
+        "date"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

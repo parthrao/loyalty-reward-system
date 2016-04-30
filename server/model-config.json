@@ -31,5 +31,61 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Customer": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Business": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Member": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Customer_Visit": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Customer_Points": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Store": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Customer_Other_Rewards": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Customer_Reward_History": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Business_Rewards": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Business_Redemption_Menu": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Business_Redemption_History": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Business_Discount_On_Spent": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Business_Customer_Category": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Business_Happy_Hours": {
+    "dataSource": "mysqlDs",
+    "public": true
   }
 }

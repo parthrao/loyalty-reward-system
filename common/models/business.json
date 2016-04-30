@@ -1,0 +1,40 @@
+{
+  "name": "Business",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "business_type": {
+      "type": "string"
+    },
+    "ranking": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "customers": {
+      "type": "hasMany",
+      "model": "Customer",
+      "foreignKey": "businessId",
+      "through": "Member"
+    },
+    "stores": {
+      "type": "hasMany",
+      "model": "Store",
+      "foreignKey": "businessId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

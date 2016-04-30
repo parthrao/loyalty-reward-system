@@ -2,5 +2,14 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "mysqlDs": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "zaza-rewards",
+    "password": "parthrao88",
+    "name": "mysqlDs",
+    "user": "root",
+    "connector": "mysql"
   }
 }

@@ -1,0 +1,33 @@
+{
+  "name": "Business_Discount_On_Spent",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "activated": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "start_time": {
+      "type": "date",
+      "required": true
+    },
+    "end_time": {
+      "type": "date"
+    },
+    "percent_off": {
+      "type": "number",
+      "required": true
+    },
+    "on_spent_off": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

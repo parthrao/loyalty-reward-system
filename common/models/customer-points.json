@@ -1,0 +1,38 @@
+{
+  "name": "Customer_Points",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "activated": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "balance": {
+      "type": "number",
+      "required": true,
+      "default": "0"
+    },
+    "mod_ts": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "business": {
+      "type": "belongsTo",
+      "model": "Business",
+      "foreignKey": "businessId"
+    },
+    "customer": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": "customerId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

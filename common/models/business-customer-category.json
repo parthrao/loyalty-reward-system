@@ -1,0 +1,21 @@
+{
+  "name": "Business_Customer_Category",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "customer_catagory": {
+      "type": "string",
+      "required": true
+    },
+    "total_visit_threshold": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Business_Redemption_Menu",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "points": {
+      "type": "number"
+    },
+    "reward_offer": {
+      "type": "string"
+    },
+    "activated": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "image_url": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
