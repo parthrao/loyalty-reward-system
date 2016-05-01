@@ -1,0 +1,26 @@
+{
+  "name": "Business_Ratings_Review",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ratings": {
+      "type": "number",
+      "required": true
+    },
+    "review": {
+      "type": "string"
+    },
+    "anonymous": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

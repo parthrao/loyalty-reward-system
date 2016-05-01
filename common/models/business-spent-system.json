@@ -1,0 +1,23 @@
+{
+  "name": "Business_Spent_System",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "avg_spent": {
+      "type": "number"
+    },
+    "offering_points": {
+      "type": "number"
+    },
+    "on_spent_of": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

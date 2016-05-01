@@ -1,0 +1,28 @@
+{
+  "name": "Business_Event",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "event_desc": {
+      "type": "string"
+    },
+    "schedule_start_ts": {
+      "type": "date",
+      "required": true
+    },
+    "schedule_end_ts": {
+      "type": "date",
+      "required": true
+    },
+    "other_desc": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

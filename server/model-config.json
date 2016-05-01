@@ -14,22 +14,22 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "mysqlDs"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "mysqlDs",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "mysqlDs",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "mysqlDs",
     "public": false
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "mysqlDs",
     "public": false
   },
   "Customer": {
@@ -85,6 +85,42 @@
     "public": true
   },
   "Business_Happy_Hours": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Business_reward_Allocation_History": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Business_Ratings_Review": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Business_Event": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Business_Fan_Wall": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Customer_Social_Media": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Business_Pictures": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Business_Target": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Business_Spent_System": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Business_Spent_Rule_Allocation_History": {
     "dataSource": "mysqlDs",
     "public": true
   }

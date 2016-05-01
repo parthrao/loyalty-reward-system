@@ -1,0 +1,22 @@
+{
+  "name": "Business_Spent_Rule_Allocation_History",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "total_points_allocated": {
+      "type": "number",
+      "required": true
+    },
+    "on_total_spent_of": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

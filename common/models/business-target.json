@@ -1,0 +1,22 @@
+{
+  "name": "Business_Target",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "period": {
+      "type": "date",
+      "required": true
+    },
+    "new_member": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

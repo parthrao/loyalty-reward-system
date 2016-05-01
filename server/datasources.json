@@ -1,8 +1,4 @@
 {
-  "db": {
-    "name": "db",
-    "connector": "memory"
-  },
   "mysqlDs": {
     "host": "localhost",
     "port": 3306,

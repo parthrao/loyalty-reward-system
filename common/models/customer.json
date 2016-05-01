@@ -14,7 +14,7 @@
       "required": true
     },
     "phone": {
-      "type": "number"
+      "type": "string"
     }
   },
   "validations": [],
