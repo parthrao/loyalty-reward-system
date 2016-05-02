@@ -14,118 +14,118 @@
     ]
   },
   "User": {
-    "dataSource": "mongoDs"
+    "dataSource": "mysqlDs"
   },
   "AccessToken": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": false
   },
   "ACL": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": false
   },
   "Role": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": false
   },
   "Customer": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Business": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Member": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Customer_Visit": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Customer_Points": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Store": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Customer_Other_Rewards": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Customer_Reward_History": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Business_Rewards": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Business_Redemption_Menu": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Business_Redemption_History": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Business_Discount_On_Spent": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Business_Customer_Category": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Business_Happy_Hours": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Business_reward_Allocation_History": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Business_Ratings_Review": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Business_Event": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Business_Fan_Wall": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Customer_Social_Media": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Business_Pictures": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Business_Target": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Business_Spent_System": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Business_Spent_Rule_Allocation_History": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   },
   "Admin": {
-    "dataSource": "mongoDs",
+    "dataSource": "mysqlDs",
     "public": true
   }
 }
