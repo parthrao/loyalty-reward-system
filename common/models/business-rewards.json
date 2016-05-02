@@ -25,6 +25,10 @@
     },
     "image_url": {
       "type": "string"
+    },
+    "created": {
+      "type": "date",
+      "required": true
     }
   },
   "validations": [],

@@ -24,6 +24,10 @@
     },
     "on_spent_off": {
       "type": "number"
+    },
+    "created": {
+      "type": "date",
+      "required": true
     }
   },
   "validations": [],

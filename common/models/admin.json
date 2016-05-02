@@ -1,17 +1,16 @@
 {
-  "name": "Business_Redemption_History",
-  "base": "PersistedModel",
+  "name": "Admin",
+  "base": "User",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "points_used": {
-      "type": "number",
-      "required": true
+    "name": {
+      "type": "string"
     },
-    "created": {
-      "type": "date",
+    "email": {
+      "type": "string",
       "required": true
     }
   },

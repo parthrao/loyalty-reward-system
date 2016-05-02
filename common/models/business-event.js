@@ -2,6 +2,11 @@ var path = require('path');
 var app = require(path.resolve(__dirname, '../../server/server'));
 
 module.exports = function(BusinessEvent) {
+  BusinessEvent.beforeRemote('create', function(context, instance, next) {
+    var req = context.req;
+    req.body.created = Date.now();
+    next();
+  });
   // console.log('Model ==', app.dataSources);
   // var ds = app.dataSources.mysqlDs;
   // var schema_v1 = {

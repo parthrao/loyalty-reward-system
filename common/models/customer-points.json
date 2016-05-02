@@ -18,6 +18,10 @@
     },
     "mod_ts": {
       "type": "date"
+    },
+    "created": {
+      "type": "date",
+      "required": true
     }
   },
   "validations": [],

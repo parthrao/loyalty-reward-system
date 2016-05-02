@@ -13,6 +13,10 @@
     "new_member": {
       "type": "number",
       "required": true
+    },
+    "created": {
+      "type": "date",
+      "required": true
     }
   },
   "validations": [],

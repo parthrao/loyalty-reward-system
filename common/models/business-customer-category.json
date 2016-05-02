@@ -12,6 +12,10 @@
     },
     "total_visit_threshold": {
       "type": "number"
+    },
+    "created": {
+      "type": "date",
+      "required": true
     }
   },
   "validations": [],

@@ -7,5 +7,14 @@
     "name": "mysqlDs",
     "user": "root",
     "connector": "mysql"
+  },
+  "mongoDs": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "zaza-rewards",
+    "password": "parth",
+    "name": "mongoDs",
+    "user": "parth",
+    "connector": "mongodb"
   }
 }

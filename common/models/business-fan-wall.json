@@ -13,6 +13,10 @@
       "type": "boolean",
       "required": true,
       "default": false
+    },
+    "created": {
+      "type": "date",
+      "required": true
     }
   },
   "validations": [],
