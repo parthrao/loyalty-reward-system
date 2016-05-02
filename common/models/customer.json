@@ -22,10 +22,22 @@
     "businesses": {
       "type": "hasMany",
       "model": "Business",
-      "foreignKey": "businessId",
+      "foreignKey": "customerId",
       "through": "Member"
+    },
+    "visits": {
+      "type": "hasMany",
+      "model": "Customer_Visit",
+      "foreignKey": "customerId"
     }
   },
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }
