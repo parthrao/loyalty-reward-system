@@ -23,7 +23,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "business": {
+      "type": "belongsTo",
+      "model": "Business",
+      "foreignKey": "businessId"
+    },
+    "business_reward": {
+      "type": "belongsTo",
+      "model": "Business_Reward",
+      "foreignKey": "business_rewardId"
+    }
+  },
   "acls": [
     {
       "accessType": "*",

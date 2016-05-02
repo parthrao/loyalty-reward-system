@@ -64,7 +64,7 @@
     "dataSource": "mongoDs",
     "public": true
   },
-  "Business_Rewards": {
+  "Business_Reward": {
     "dataSource": "mongoDs",
     "public": true
   },

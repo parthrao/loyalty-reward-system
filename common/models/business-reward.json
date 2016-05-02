@@ -1,5 +1,5 @@
 {
-  "name": "Business_Rewards",
+  "name": "Business_Reward",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -32,7 +32,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "business": {
+      "type": "belongsTo",
+      "model": "Business",
+      "foreignKey": "businessId"
+    }
+  },
   "acls": [
     {
       "accessType": "*",
