@@ -18,7 +18,8 @@
     "loopback-connector-mysql": "^2.2.1",
     "loopback-datasource-juggler": "^2.39.0",
     "path": "^0.12.7",
-    "serve-favicon": "^2.0.1"
+    "serve-favicon": "^2.0.1",
+    "twilio": "^2.9.1"
   },
   "devDependencies": {
     "jshint": "^2.5.6",
