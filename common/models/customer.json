@@ -14,7 +14,12 @@
       "required": true
     },
     "phone": {
-      "type": "string"
+      "type": "string",
+      "required": true
+    },
+    "countryCode": {
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],
