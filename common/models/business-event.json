@@ -23,10 +23,19 @@
     "created": {
       "type": "date",
       "required": true
+    },
+    "businessId": {
+      "required": true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "business": {
+      "type": "belongsTo",
+      "model": "Business",
+      "foreignKey": "businessId"
+    }
+  },
   "acls": [
     {
       "accessType": "*",

@@ -17,10 +17,30 @@
     "created": {
       "type": "date",
       "required": true
+    },
+    "businessId": {
+      "required": true
+    },
+    "customerId": {
+      "required": true
+    },
+    "spent_ruleId": {
+      "required": true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "customer": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": "customerId"
+    },
+    "spent_rule": {
+      "type": "belongsTo",
+      "model": "Business_Spent_System",
+      "foreignKey": "spent_ruleId"
+    }
+  },
   "acls": [
     {
       "accessType": "*",

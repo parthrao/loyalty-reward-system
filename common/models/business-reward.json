@@ -29,6 +29,9 @@
     "created": {
       "type": "date",
       "required": true
+    },
+    "businessId": {
+      "required": true
     }
   },
   "validations": [],

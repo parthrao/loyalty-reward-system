@@ -18,10 +18,19 @@
     "created": {
       "type": "date",
       "required": true
+    },
+    "customerId": {
+      "required": true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "customer": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": "customerId"
+    }
+  },
   "acls": [
     {
       "accessType": "*",

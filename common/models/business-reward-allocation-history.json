@@ -9,6 +9,15 @@
     "created": {
       "type": "date",
       "required": true
+    },
+    "businessId": {
+      "required": true
+    },
+    "customerId": {
+      "required": true
+    },
+    "business_rewardId": {
+      "required": true
     }
   },
   "validations": [],

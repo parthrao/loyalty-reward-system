@@ -20,6 +20,12 @@
     "created": {
       "type": "date",
       "required": true
+    },
+    "businessId": {
+      "required": true
+    },
+    "business_rewardId": {
+      "required": true
     }
   },
   "validations": [],

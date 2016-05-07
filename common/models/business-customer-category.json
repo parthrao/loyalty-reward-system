@@ -16,6 +16,9 @@
     "created": {
       "type": "date",
       "required": true
+    },
+    "businessId": {
+      "required": true
     }
   },
   "validations": [],
@@ -24,11 +27,6 @@
       "type": "belongsTo",
       "model": "Business",
       "foreignKey": "businessId"
-    },
-    "customer": {
-      "type": "belongsTo",
-      "model": "Customer",
-      "foreignKey": "customerId"
     }
   },
   "acls": [

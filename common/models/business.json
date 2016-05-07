@@ -33,6 +33,11 @@
       "type": "hasMany",
       "model": "Store",
       "foreignKey": "businessId"
+    },
+    "customer_catagories": {
+      "type": "hasMany",
+      "model": "Business_Customer_Category",
+      "foreignKey": "businessId"
     }
   },
   "acls": [

@@ -13,10 +13,35 @@
     "created": {
       "type": "date",
       "required": true
+    },
+    "businessId": {
+      "required": true
+    },
+    "customerId": {
+      "required": true
+    },
+    "redemption_menuId": {
+      "required": true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "business": {
+      "type": "belongsTo",
+      "model": "Business",
+      "foreignKey": "businessId"
+    },
+    "customer": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": "customerId"
+    },
+    "business_redemption_menu": {
+      "type": "belongsTo",
+      "model": "Business_Redemption_Menu",
+      "foreignKey": "redemption_menuId"
+    }
+  },
   "acls": [
     {
       "accessType": "*",
