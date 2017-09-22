@@ -5,20 +5,43 @@
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/admins"
+  },
   "properties": {
     "name": {
       "type": "string"
     },
     "email": {
-      "type": "string",
-      "required": true
+      "type": "string"
+    },
+    "storeId": {
+      "type": "string"
+    },
+    "hardwareId": {
+      "type": "string"
+    },
+    "businessId": {
+      "type": "string"
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "roles": {
+      "type": "hasMany",
+      "model": "Role",
+      "foreignKey": "principalId",
+      "through": "ReleMapping"
+    },
+    "business": {
+      "type": "belongsTo",
+      "model": "Business",
+      "foreignKey": "businessId"
+    }
+  },
   "acls": [
     {
-      "accessType": "*",
+      "accessType": "find",
       "principalType": "ROLE",
       "principalId": "$everyone",
       "permission": "ALLOW"

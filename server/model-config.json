@@ -26,11 +26,11 @@
   },
   "RoleMapping": {
     "dataSource": "mongoDs",
-    "public": false
+    "public": true
   },
   "Role": {
     "dataSource": "mongoDs",
-    "public": false
+    "public": true
   },
   "Customer": {
     "dataSource": "mongoDs",
@@ -116,7 +116,7 @@
     "dataSource": "mongoDs",
     "public": true
   },
-  "Business_Spent_System": {
+  "Business_Points_On_Spent_Scheme": {
     "dataSource": "mongoDs",
     "public": true
   },
@@ -125,6 +125,53 @@
     "public": true
   },
   "Admin": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Category": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "City": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Address": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Reward_Type": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Reward_OTP_Request": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Container": {
+    "dataSource": "amazon",
+    "public": true
+  },
+  "AppLogin_OTP_Request": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "UserInfoChangeRequest": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Campaign": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Email": {
+    "dataSource": "emailDataSource"
+  },
+  "Customer_Event": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Message_Logs": {
     "dataSource": "mongoDs",
     "public": true
   }

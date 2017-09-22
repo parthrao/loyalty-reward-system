@@ -5,6 +5,9 @@
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/business_fan_walls"
+  },
   "properties": {
     "comment": {
       "type": "string"

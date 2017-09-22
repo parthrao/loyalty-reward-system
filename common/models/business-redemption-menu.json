@@ -5,9 +5,13 @@
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/business_redemption_menus"
+  },
   "properties": {
     "points": {
-      "type": "number"
+      "type": "number",
+      "required": true
     },
     "reward_offer": {
       "type": "string"
@@ -15,17 +19,26 @@
     "activated": {
       "type": "boolean",
       "required": true,
-      "default": false
+      "default": true
     },
     "image_url": {
-      "type": "string"
+      "type": "string",
+      "default": ""
+    },
+    "description": {
+      "type": "string",
+      "default": ""
     },
     "created": {
       "type": "date",
       "required": true
     },
     "businessId": {
+      "type": "string",
       "required": true
+    },
+    "rewardId": {
+      "type": "string"
     }
   },
   "validations": [],
@@ -34,6 +47,11 @@
       "type": "belongsTo",
       "model": "Business",
       "foreignKey": "businessId"
+    },
+    "reward": {
+      "type": "hasOne",
+      "model": "BusinessReward",
+      "foreignKey": "rewardId"
     }
   },
   "acls": [

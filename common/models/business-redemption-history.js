@@ -1,7 +1,11 @@
 module.exports = function(BusinessRedemptionHistory) {
-  BusinessRedemptionHistory.beforeRemote('create', function(context, instance, next) {
-    var req = context.req;
-    req.body.created = Date.now();
-    next();
+  BusinessRedemptionHistory.observe('before save', function filterProperties(ctx, next) {
+    if(ctx.isNewInstance) {
+      ctx.instance.created = Date.now();
+      next();
+    }
+    else {
+      next();
+    }
   });
 };

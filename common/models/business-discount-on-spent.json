@@ -5,6 +5,9 @@
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/business_discount_on_spent"
+  },
   "properties": {
     "activated": {
       "type": "boolean",
@@ -30,7 +33,9 @@
       "required": true
     },
     "businessId": {
-      "required": true
+      "type": {
+        "required": true
+      }
     }
   },
   "validations": [],

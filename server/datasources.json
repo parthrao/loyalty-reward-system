@@ -16,5 +16,33 @@
     "name": "mongoDs",
     "user": "parth",
     "connector": "mongodb"
+  },
+  "amazon": {
+    "name": "amazon",
+    "connector": "loopback-component-storage",
+    "provider": "amazon",
+    "key": "4eMJRuspOgOwrBDAkPefJtzw6uA10RzBVMXY/oiR",
+    "keyId": "AKIAJ5SM3NBARQC4U7AQ"
+  },
+  "emailDataSource": {
+    "name": "emailDataSource",
+    "defaultForType": "mail",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "SMTP",
+        "host": "smtp.gmail.com",
+        "secure": false,
+        "port": 587,
+        "auth": {
+          "user": "zazareward@gmail.com",
+          "pass": "pass@zaza"
+        }
+      }
+    ]
+  },
+  "junedMongo": {
+    "url": "mongodb://zaza-admin:admin123@ds011893.mlab.com:11893/heroku_hghrk1cr",
+    "name": "junedMongo"
   }
 }

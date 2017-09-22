@@ -1,10 +1,21 @@
 {
   "name": "Business",
-  "base": "PersistedModel",
+  "base": "User",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/businesses"
+  },
+  "protected": [
+    "minimum_spend_per_point",
+    "avg_spend",
+    "earn_point_rate",
+    "redeem_rate",
+    "points_per_visit",
+    "created"
+  ],
   "properties": {
     "name": {
       "type": "string",
@@ -14,11 +25,74 @@
       "type": "string",
       "required": true
     },
-    "business_type": {
-      "type": "string"
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "countryCode": {
+      "type": "string",
+      "required": true
     },
     "ranking": {
-      "type": "number"
+      "type": "number",
+      "default": 0
+    },
+    "avg_spend": {
+      "type": "number",
+      "default": 0
+    },
+    "earn_point_rate": {
+      "type": "number",
+      "default": 0
+    },
+    "redeem_rate": {
+      "type": "number",
+      "default": 0
+    },
+    "points_per_visit": {
+      "type": "number",
+      "default": 0
+    },
+    "minimum_spend_per_point": {
+      "type": "number",
+      "default": 0
+    },
+    "opening_hours": {
+      "type": "object",
+      "default": {}
+    },
+    "cost": {
+      "type": "object",
+      "default": {}
+    },
+    "known_for": {
+      "type": [
+        "string"
+      ],
+      "default": []
+    },
+    "address_text": {
+      "type": "string",
+      "default": ""
+    },
+    "address_geo": {
+      "type": "geopoint"
+    },
+    "currency": {
+      "type": "string",
+      "default": "INR"
+    },
+    "logo_url": {
+      "type": "string",
+      "default": ""
+    },
+    "cover_url": {
+      "type": "string",
+      "default": ""
+    },
+    "created": {
+      "type": "date",
+      "required": "true"
     }
   },
   "validations": [],
@@ -34,9 +108,59 @@
       "model": "Store",
       "foreignKey": "businessId"
     },
+    "category": {
+      "type": "belongsTo",
+      "model": "Category",
+      "foreignKey": "categoryId"
+    },
     "customer_catagories": {
       "type": "hasMany",
       "model": "Business_Customer_Category",
+      "foreignKey": "businessId"
+    },
+    "store_admins": {
+      "type": "hasMany",
+      "model": "Admin",
+      "foreignKey": "businessId"
+    },
+    "business_redemption_menu_items": {
+      "type": "hasMany",
+      "model": "Business_Redemption_Menu",
+      "foreignKey": "businessId"
+    },
+    "business_rewards": {
+      "type": "hasMany",
+      "model": "Business_Reward",
+      "foreignKey": "businessId"
+    },
+    "discount_on_spent_schemes": {
+      "type": "hasMany",
+      "model": "Business_Discount_On_Spent",
+      "foreignKey": "businessId"
+    },
+    "points_on_spent_schemes": {
+      "type": "hasMany",
+      "model": "Business_Points_On_Spent_Scheme",
+      "foreignKey": "businessId"
+    },
+    "business_happy_hours": {
+      "type": "hasMany",
+      "model": "Business_Happy_Hours",
+      "foreignKey": "businessId"
+    },
+    "review_and_rating": {
+      "type": "hasMany",
+      "model": "Business_Ratings_Review",
+      "foreignKey": "businessId"
+    },
+    "events": {
+      "type": "hasMany",
+      "model": "Business_Event",
+      "foreignKey": "businessId"
+    },
+    "campaigns": {
+      "type": "hasMany",
+      "model": "Campaign",
       "foreignKey": "businessId"
     }
   },
@@ -45,6 +169,18 @@
       "accessType": "*",
       "principalType": "ROLE",
       "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "businessAdmin",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "admin",
       "permission": "ALLOW"
     }
   ],

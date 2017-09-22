@@ -5,6 +5,9 @@
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/business_spent_rule_allocation_history"
+  },
   "properties": {
     "total_points_allocated": {
       "type": "number",
@@ -19,13 +22,19 @@
       "required": true
     },
     "businessId": {
-      "required": true
+      "type": {
+        "required": true
+      }
     },
     "customerId": {
-      "required": true
+      "type": {
+        "required": true
+      }
     },
     "spent_ruleId": {
-      "required": true
+      "type": {
+        "required": true
+      }
     }
   },
   "validations": [],

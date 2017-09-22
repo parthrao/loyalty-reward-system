@@ -5,6 +5,9 @@
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/business_pictures"
+  },
   "properties": {
     "url": {
       "type": "string",

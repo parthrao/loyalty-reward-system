@@ -5,6 +5,9 @@
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/customer_social_media"
+  },
   "properties": {
     "token": {
       "type": "string"
@@ -20,7 +23,9 @@
       "required": true
     },
     "customerId": {
-      "required": true
+      "type": {
+        "required": true
+      }
     }
   },
   "validations": [],

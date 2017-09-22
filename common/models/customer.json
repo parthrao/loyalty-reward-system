@@ -1,10 +1,17 @@
 {
   "name": "Customer",
   "base": "User",
+  "strict": true,
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/customers"
+  },
+  "hidden": [
+    "temp_secret"
+  ],
   "properties": {
     "name": {
       "type": "string",
@@ -28,6 +35,28 @@
     },
     "authyId": {
       "type": "string"
+    },
+    "temp_secret": {
+      "type": "string"
+    },
+    "profile_pic": {
+      "type": "string",
+      "default": ""
+    },
+    "first_name": {
+      "type": "string",
+      "default": ""
+    },
+    "last_name": {
+      "type": "string",
+      "default": ""
+    },
+    "birthday": {
+      "type": "date"
+    },
+    "created": {
+      "type": "date",
+      "required": "true"
     }
   },
   "validations": [],
@@ -41,6 +70,31 @@
     "visits": {
       "type": "hasMany",
       "model": "Customer_Visit",
+      "foreignKey": "customerId"
+    },
+    "points": {
+      "type": "hasMany",
+      "model": "Customer_Points",
+      "foreignKey": "customerId"
+    },
+    "customer_reward_history": {
+      "type": "hasMany",
+      "model": "Customer_Reward_History",
+      "foreignKey": "customerId"
+    },
+    "other_rewards": {
+      "type": "hasMany",
+      "model": "Customer_Other_Rewards",
+      "foreignKey": "customerId"
+    },
+    "review_and_rating": {
+      "type": "hasMany",
+      "model": "Business_Ratings_Review",
+      "foreignKey": "customerId"
+    },
+    "events": {
+      "type": "hasMany",
+      "model": "Customer_Event",
       "foreignKey": "customerId"
     }
   },

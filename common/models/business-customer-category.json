@@ -5,19 +5,24 @@
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/business_customer_categories"
+  },
   "properties": {
     "customer_catagory": {
       "type": "string",
       "required": true
     },
     "total_visit_threshold": {
-      "type": "number"
+      "type": "number",
+      "default": 0
     },
     "created": {
       "type": "date",
       "required": true
     },
     "businessId": {
+      "type": "string",
       "required": true
     }
   },

@@ -5,6 +5,9 @@
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/customer_visits"
+  },
   "properties": {
     "billed_amount": {
       "type": "number",
@@ -16,9 +19,17 @@
       "required": true
     },
     "businessId": {
-      "required": true
+      "type": {
+        "required": true
+      }
     },
     "customerId": {
+      "type": {
+        "required": true
+      }
+    },
+    "storeId": {
+      "type": "string",
       "required": true
     }
   },
@@ -33,6 +44,11 @@
       "type": "belongsTo",
       "model": "Customer",
       "foreignKey": "customerId"
+    },
+    "store": {
+      "type": "belongsTo",
+      "model": "Store",
+      "foreignKey": "storeId"
     }
   },
   "acls": [
@@ -40,6 +56,18 @@
       "accessType": "*",
       "principalType": "ROLE",
       "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "businessAdmin",
       "permission": "ALLOW"
     }
   ],

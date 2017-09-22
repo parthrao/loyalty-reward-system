@@ -1,0 +1,35 @@
+{
+  "name": "Reward_OTP_Request",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "customerId": {
+      "type": "string",
+      "required": true
+    },
+    "businessId": {
+      "type": "string",
+      "required": true
+    },
+    "rewardId": {
+      "type": "string",
+      "required": true
+    },
+    "redemption_menuId": {
+      "type": "string"
+    },
+    "storeId": {
+      "type": "string"
+    },
+    "points": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

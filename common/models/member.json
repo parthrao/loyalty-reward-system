@@ -5,10 +5,36 @@
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/memberships"
+  },
   "properties": {
     "created": {
       "type": "date",
       "required": true
+    },
+    "storeId": {
+      "type": "string"
+    },
+    "membership_category": {
+      "type": "string",
+      "default": "Regular"
+    },
+    "referral_code": {
+      "type": "string",
+      "default": ""
+    },
+    "invite_code": {
+      "type": "string",
+      "default": ""
+    },
+    "status": {
+      "type": "string",
+      "default": "active"
+    },
+    "notification_subscription_status": {
+      "type": "string",
+      "default": "active"
     }
   },
   "validations": [],

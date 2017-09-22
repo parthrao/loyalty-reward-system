@@ -1,14 +1,17 @@
 {
   "name": "Business_Ratings_Review",
   "base": "PersistedModel",
+  "strict": true,
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/review_and_rating"
+  },
   "properties": {
     "ratings": {
-      "type": "number",
-      "required": true
+      "type": "number"
     },
     "review": {
       "type": "string"
@@ -23,7 +26,11 @@
       "required": true
     },
     "businessId": {
+      "type": "string",
       "required": true
+    },
+    "customerId": {
+      "type": "string"
     }
   },
   "validations": [],

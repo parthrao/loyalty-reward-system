@@ -5,6 +5,9 @@
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/business_redemption_history"
+  },
   "properties": {
     "points_used": {
       "type": "number",
@@ -15,13 +18,19 @@
       "required": true
     },
     "businessId": {
-      "required": true
+      "type": {
+        "required": true
+      }
     },
     "customerId": {
-      "required": true
+      "type": {
+        "required": true
+      }
     },
     "redemption_menuId": {
-      "required": true
+      "type": {
+        "required": true
+      }
     }
   },
   "validations": [],

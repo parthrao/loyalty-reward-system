@@ -1,0 +1,7 @@
+{
+  "mongoDs": {
+    "defaultForType": "mongodb",
+    "connector": "mongodb",
+    "url": "mongodb://zaza-admin:admin123@ds011893.mlab.com:11893/heroku_l4rzk7m6"
+  }
+}

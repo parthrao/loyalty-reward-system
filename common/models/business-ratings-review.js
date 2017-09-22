@@ -1,7 +1,12 @@
 module.exports = function(BusinessRatingsReview) {
-  BusinessRatingsReview.beforeRemote('create', function(context, instance, next) {
-    var req = context.req;
-    req.body.created = Date.now();
-    next();
+  BusinessRatingsReview.validatesInclusionOf('ratings', {in: [0,1,2,3,4,5]});
+  BusinessRatingsReview.observe('before save', function filterProperties(ctx, next) {
+    if(ctx.isNewInstance) {
+      ctx.instance.created = Date.now();
+      next();
+    }
+    else {
+      next();
+    }
   });
 };

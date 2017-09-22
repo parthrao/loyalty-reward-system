@@ -1,7 +1,12 @@
 module.exports = function(BusinessTarget) {
-  BusinessTarget.beforeRemote('create', function(context, instance, next) {
-    var req = context.req;
-    req.body.created = Date.now();
-    next();
+  BusinessTarget.observe('before save', function filterProperties(ctx, next) {
+    if(ctx.isNewInstance) {
+      ctx.instance.created = Date.now();
+      next();
+    }
+    else {
+      next();
+    }
   });
+
 };

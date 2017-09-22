@@ -5,15 +5,18 @@
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/business_events"
+  },
   "properties": {
     "event_desc": {
       "type": "string"
     },
-    "schedule_start_ts": {
+    "start_date": {
       "type": "date",
       "required": true
     },
-    "schedule_end_ts": {
+    "end_date": {
       "type": "date",
       "required": true
     },
@@ -25,7 +28,23 @@
       "required": true
     },
     "businessId": {
+      "type": "string",
       "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "geopoint"
+    },
+    "status": {
+      "type": "string",
+      "required": true,
+      "default": "active"
+    },
+    "cover_photo": {
+      "type": "string"
     }
   },
   "validations": [],

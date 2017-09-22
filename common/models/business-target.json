@@ -5,6 +5,9 @@
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/business_targets"
+  },
   "properties": {
     "period": {
       "type": "date",
@@ -19,7 +22,9 @@
       "required": true
     },
     "businessId": {
-      "required": true
+      "type": {
+        "required": true
+      }
     }
   },
   "validations": [],

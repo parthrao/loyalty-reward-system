@@ -5,19 +5,28 @@
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/business_reward_allocation_history"
+  },
   "properties": {
     "created": {
       "type": "date",
       "required": true
     },
     "businessId": {
-      "required": true
+      "type": {
+        "required": true
+      }
     },
     "customerId": {
-      "required": true
+      "type": {
+        "required": true
+      }
     },
     "business_rewardId": {
-      "required": true
+      "type": {
+        "required": true
+      }
     }
   },
   "validations": [],

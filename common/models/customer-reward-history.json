@@ -5,11 +5,14 @@
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/customer_reward_history"
+  },
   "properties": {
     "points": {
       "type": "number"
     },
-    "reward": {
+    "rewardId": {
       "type": "string"
     },
     "action": {
@@ -24,10 +27,18 @@
       "required": true
     },
     "businessId": {
+      "type": "date",
       "required": true
     },
     "customerId": {
+      "type": "string",
       "required": true
+    },
+    "storeId": {
+      "type": "string"
+    },
+    "business_redemption_menuID": {
+      "type": "string"
     }
   },
   "validations": [],
@@ -41,6 +52,11 @@
       "type": "belongsTo",
       "model": "Customer",
       "foreignKey": "customerId"
+    },
+    "store": {
+      "type": "belongsTo",
+      "model": "Store",
+      "foreignKey": "storeId"
     }
   },
   "acls": [

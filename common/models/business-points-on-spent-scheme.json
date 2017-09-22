@@ -1,9 +1,12 @@
 {
-  "name": "Business_Spent_System",
+  "name": "Business_Points_On_Spent_Scheme",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
+  },
+  "http": {
+    "path": "/business_points_on_spent_schemes"
   },
   "properties": {
     "avg_spent": {
@@ -20,7 +23,9 @@
       "required": true
     },
     "businessId": {
-      "required": true
+      "type": {
+        "required": true
+      }
     }
   },
   "validations": [],

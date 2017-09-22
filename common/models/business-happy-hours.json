@@ -5,6 +5,9 @@
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/business_happy_hours"
+  },
   "properties": {
     "from_time": {
       "type": "date"
@@ -22,10 +25,14 @@
       "required": true
     },
     "businessId": {
-      "required": true
+      "type": {
+        "required": true
+      }
     },
     "business_rewardId": {
-      "required": true
+      "type": {
+        "required": true
+      }
     }
   },
   "validations": [],

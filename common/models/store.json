@@ -5,16 +5,36 @@
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/stores"
+  },
   "properties": {
     "name": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "location": {
       "type": "geopoint",
       "required": true
     },
     "phone": {
+      "type": "string",
+      "default": ""
+    },
+    "street": {
+      "type": "string"
+    },
+    "cityId": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "type": "string"
+    },
+    "zipCode": {
       "type": "string"
     },
     "created": {
@@ -22,7 +42,12 @@
       "required": true
     },
     "businessId": {
+      "type": "string",
       "required": true
+    },
+    "address_text": {
+      "type": "string",
+      "default": ""
     }
   },
   "validations": [],

@@ -5,13 +5,20 @@
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/customer_other_rewards"
+  },
   "properties": {
     "activated": {
       "type": "boolean",
       "required": true,
-      "default": false
+      "default": true
     },
-    "reward": {
+    "rewardId": {
+      "type": "string",
+      "required": true
+    },
+    "reward_type": {
       "type": "string",
       "required": true
     },
@@ -28,10 +35,14 @@
       "required": true
     },
     "businessId": {
-      "required": true
+      "type": {
+        "required": true
+      }
     },
     "customerId": {
-      "required": true
+      "type": {
+        "required": true
+      }
     }
   },
   "validations": [],

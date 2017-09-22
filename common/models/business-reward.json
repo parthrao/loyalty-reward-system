@@ -5,6 +5,9 @@
   "options": {
     "validateUpsert": true
   },
+  "http": {
+    "path": "/business_rewards"
+  },
   "properties": {
     "reward": {
       "type": "string"
@@ -15,22 +18,50 @@
     "type": {
       "type": "string"
     },
+    "typeId": {
+      "type": "string"
+    },
     "scheme": {
       "type": "string"
     },
-    "activated": {
+    "on_spent_of": {
+      "type": "number",
+      "default": 0
+    },
+    "percent_off": {
+      "type": "number",
+      "default": 0
+    },
+    "start_time": {
+      "type": "date"
+    },
+    "end_time": {
+      "type": "date"
+    },
+    "days": {
+      "type": [
+        "object"
+      ]
+    },
+    "avg_spent": {
+      "type": "number",
+      "default": 0
+    },
+    "active": {
       "type": "boolean",
       "required": true,
       "default": true
     },
     "image_url": {
-      "type": "string"
+      "type": "string",
+      "default": ""
     },
     "created": {
       "type": "date",
       "required": true
     },
     "businessId": {
+      "type": "string",
       "required": true
     }
   },
