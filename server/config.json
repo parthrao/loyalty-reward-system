@@ -24,8 +24,8 @@
     }
   },
   "legacyExplorer": false,
-  "accessKeyId": "AKIAIRMX773DQFAPE3UQ",
-  "secretAccessKey": "VjmxUkBpvaLKTaAu5aCidKg7e4AM+O1l013uc3el",
+  "accessKeyId": "Put your own",
+  "secretAccessKey": "Put your own",
   "region": "us-east-1",
-  "SENDGRID_API_KEY": "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"
+  "SENDGRID_API_KEY": "Put your own"
 }
