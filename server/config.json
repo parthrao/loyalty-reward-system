@@ -26,6 +26,6 @@
   "legacyExplorer": false,
   "accessKeyId": "Put your own",
   "secretAccessKey": "Put your own",
-  "region": "us-east-1",
+  "region": "###",
   "SENDGRID_API_KEY": "Put your own"
 }
